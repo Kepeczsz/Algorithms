@@ -1,8 +1,0 @@
-﻿  Lista.cpp
-C:\Users\sm49416\source\repos\Lista\Lista\Lista.cpp(19,21): error C3861: "null": identyfikatora nie odnaleziono
-C:\Users\sm49416\source\repos\Lista\Lista\Lista.cpp(32): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „linkedList<T>” klasy klasa szablon
-C:\Users\sm49416\source\repos\Lista\Lista\Lista.cpp(23,19): error C3861: "null": identyfikatora nie odnaleziono
-C:\Users\sm49416\source\repos\Lista\Lista\Lista.cpp(25,23): error C3861: "null": identyfikatora nie odnaleziono
-C:\Users\sm49416\source\repos\Lista\Lista\Lista.cpp(19,21): error C2065: "null": niezadeklarowany identyfikator
-C:\Users\sm49416\source\repos\Lista\Lista\Lista.cpp(23,19): error C2065: "null": niezadeklarowany identyfikator
-C:\Users\sm49416\source\repos\Lista\Lista\Lista.cpp(25,23): error C2065: "null": niezadeklarowany identyfikator
