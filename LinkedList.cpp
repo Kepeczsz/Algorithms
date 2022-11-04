@@ -27,7 +27,7 @@ public:
 	}
 
 	~LinkedList() {
-		delete head;
+		deleteLinkedList();
 	}
 
 public:
@@ -49,8 +49,6 @@ public:
 
 	void pushBack(T data) {
 		if (size == 0) {
-			head = new Node;
-			tail = new Node;
 			head->data = data;
 			tail = head;
 			size++;
@@ -141,13 +139,12 @@ public:
 
 int main() {
 	
-	LinkedList<float>* linkedList = new LinkedList<float>();
+	LinkedList<int>* linkedList = new LinkedList<int>;
 	std::chrono::steady_clock sc;
 	auto start = sc.now();
 	
-	for (int i = 0; i < 5; i++) {
-		/*gqlist1.push_back(i);*/
-		linkedList->pushBack(i + 0.232f);
+	for (int i = 0; i < 5000; i++) {
+		linkedList->pushBack(i);
 	}
 	linkedList->print();
 	linkedList->deleteLinkedList();
@@ -156,7 +153,6 @@ int main() {
 	auto time_span = static_cast<std::chrono::duration<double>>(end - start);  
 	std::cout << "Operation took: " << time_span.count() << " seconds !!!";
 
-	std::cin.get();
+	// std::cin.get();
 	delete linkedList;
-
 }
